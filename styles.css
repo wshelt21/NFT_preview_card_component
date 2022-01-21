@@ -24,14 +24,112 @@ body {
   color: hsl(0, 0%, 100%);
 }
 
+.card-container > .main-img img {
+       max-width: 100%;
+       height: auto;
+       border-radius: 15px;
+     }
+
+.main-img {
+  position: relative;
+     }
+
+.card-container > p {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+.card-container {
+  margin: 0 auto;
+  width: 300px;
+  padding: 25px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 20px;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 4px);
+  background-color: hsl(178, 100%, 50%, 50%);
+  border-radius: 15px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.img-overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-overlay:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.card-container > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 1rem 0 5px 0;
+}
+
+.card-container > ul li:first-child {
+  color: hsl(178, 100%, 50%);
+}
+
+.card-container > ul li{
+  display: flex;
+  align-items: center;
+}
+
+.card-container > ul img {
+  padding-right: 5px;
+}
+
+.card-container > ul span {
+  color: hsl(215, 51%, 70%);
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  border-top: solid 1px hsl(215, 32%, 27%);
+  padding-top: 10px;
+}
+
+.card-footer > img {
+  max-width: 10%;
+  height: 10%;
+  border: solid 1px white;
+  border-radius: 50px;
+  margin-right: 5%;
+}
+
+.card-footer > p {
+  color: hsl(215, 51%, 70%);
+}
+
+ a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+ a:hover{
+  color: hsl(178, 100%, 50%);
+}
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-p {
-  font-size: 18px
 }
