@@ -20,6 +20,7 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ### The challenge
 
+This challenge was to build out a preview card component and get it looking as close to the design as possible.
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
@@ -27,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](images/screenshot.jpg.png)
 
 ### Links
 
@@ -73,11 +74,11 @@ Specifically learning how to use the z-index property to order elements on top o
 }
 ```
 
-I also encountered a bug that was creating an extra empty <li> element on the page and it took me a couple of days why this was occurring just to figure out (as I was typing a cry for help on stack overflow) that I simply didn't properly close the last <li> element. So I definitely learned the importance of closing tags correctly and double checking my code for typos or spelling mistakes when debugging haha! 
+I also encountered a bug that was creating an extra empty li tag element on the page and it took me a couple of days why this was occurring just to figure out (as I was typing a cry for help on stack overflow) that I simply didn't properly close the last li element. So I definitely learned the importance of closing tags correctly and double checking my code for typos or spelling mistakes when debugging haha! 
 
 ### Continued development
 
-Moving into future projects I would definitely like to learn more about CSS animations and the different transform properties. I felt like my understanding on how positioning could also improve, as I did take me a couple of hours to properly align the <img> element with the overlay <div>. 
+Moving into future projects I would definitely like to learn more about CSS animations and the different transform properties. I felt like my understanding on how positioning could also improve, as I did take me a couple of hours to properly align the <img> element with the overlay. 
 
 ### Useful resources
 
@@ -92,6 +93,6 @@ Moving into future projects I would definitely like to learn more about CSS anim
 
 ## Acknowledgments
 
-Would also like to shout out tsbsankara's YouTube channel and they video on this project for helping with identifying how to solve the image overlay problem here's a link the video for anyone who might get stuck on a particular section:
+I would also like to shout out tsbsankara's YouTube channel and they video on this project for helping with identifying how to solve the image overlay problem here's a link the video for anyone who might get stuck on a particular section:
 (https://www.youtube.com/watch?v=9bGbykdR4T8&t=1579s&ab_channel=tsbsankara)
 
