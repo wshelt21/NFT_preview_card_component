@@ -16,8 +16,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -31,14 +29,6 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
@@ -51,11 +41,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 **Note: These are just examples. Delete this note and replace the list above with your own choices**
 
@@ -63,49 +49,49 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-To see how you can add code snippets, see below:
+For this project I mainly focused on application of CSS layout concepts such as flexbox and positioning, this also marks my first time working directly with SVGs and learning how to insert them into a page. My biggest hurdle was completing the hover over active state for the main image and creating an overlay.
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+Specifically learning how to use the z-index property to order elements on top of each other and the transition and transform properties to create nice hover animations:
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.img-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% - 4px);
+  background-color: hsl(178, 100%, 50%, 50%);
+  border-radius: 15px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+.img-overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+I also encountered a bug that was creating an extra empty <li> element on the page and it took me a couple of days why this was occurring just to figure out (as I was typing a cry for help on stack overflow) that I simply didn't properly close the last <li> element. So I definitely learned the importance of closing tags correctly and double checking my code for typos or spelling mistakes when debugging haha! 
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Moving into future projects I would definitely like to learn more about CSS animations and the different transform properties. I felt like my understanding on how positioning could also improve, as I did take me a couple of hours to properly align the <img> element with the overlay <div>. 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [CSS Tricks](https://css-tricks.com/almanac/properties/t/transition/) - This really helped me understand the transition property. I also took a look at the pages for Tranform and Flexbox as well. 
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@wshelt21](https://www.frontendmentor.io/profile/wshelt21)
+- Twitter - [@will_shelton21](https://twitter.com/will_shelton21)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Would also like to shout out tsbsankara's YouTube channel and they video on this project for helping with identifying how to solve the image overlay problem here's a link the video for anyone who might get stuck on a particular section:
+(https://www.youtube.com/watch?v=9bGbykdR4T8&t=1579s&ab_channel=tsbsankara)
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
